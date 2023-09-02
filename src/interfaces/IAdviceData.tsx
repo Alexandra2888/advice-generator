@@ -1,4 +1,6 @@
-export interface iAdviceData {
+export interface IAdviceData {
+  slip: {
     id: number;
     advice: string;
-  }
+  };
+}
