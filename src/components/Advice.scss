@@ -1,0 +1,61 @@
+@import "./../scss/_config.scss";
+@import "./../scss/_general.scss";
+
+.advice__container {
+   width: 21.4375rem;
+   height: 19.6875rem;
+   background-color: $darkGrayishBlue;
+   padding: 1.5rem;
+   position: relative;
+
+   &-id {
+      color: $neonGreen;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 2.5rem;
+      letter-spacing: 4.09px;
+   }
+
+   &-text {
+      color: $lightCyan;
+      font-size: $fs;
+      font-weight: $fw;
+      line-height: normal;
+      letter-spacing: -0.3px;
+      text-align: center;
+      padding: 0.625rem;
+   }
+
+   &-img {
+      margin: 1.25rem auto;
+   }
+
+   &-btn {
+      display: block;
+      position: fixed;
+      margin: 0.625rem auto;
+      border-radius: 50%;
+      background-color: transparent;
+      position: absolute;
+      left: 40%;
+      top: 85%;
+      width: 64px;
+      height: 64px;
+   }
+
+   &-btn:hover {
+      box-shadow: 0 0 2.5rem $neonGreen;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .advice__container {
+      width: 33, 75rem;
+      height: 20.75rem;
+
+      &-btn {
+         left: 43%;
+         top: 85%;
+      }
+   }
+}

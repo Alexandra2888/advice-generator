@@ -1,0 +1,12 @@
+@import "./scss/_config.scss";
+@import "./scss/_general.scss";
+
+body {  
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $darkBlue;
+}
