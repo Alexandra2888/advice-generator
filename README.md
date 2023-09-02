@@ -52,7 +52,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - https://advice-generator28.netlify.app/
 - Frontend Mentor - [@Alexandra2888](https://www.frontendmentor.io/profile/Alexandra2888)
 
 
