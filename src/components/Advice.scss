@@ -31,16 +31,20 @@
    }
 
    &-btn {
-      display: block;
-      position: fixed;
-      margin: 0.625rem auto;
-      border-radius: 50%;
-      background-color: transparent;
+      all: unset;
+      background-color: $neonGreen;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      left: 40%;
-      top: 85%;
-      width: 64px;
-      height: 64px;
+      bottom: -2rem;
+      margin-left: -32px;
+      left: 50%;
+      transform: translateX(-50%, -50%);
+      cursor: pointer;
    }
 
    &-btn:hover {
@@ -52,10 +56,5 @@
    .advice__container {
       width: 33, 75rem;
       height: 20.75rem;
-
-      &-btn {
-         left: 43%;
-         top: 85%;
-      }
    }
 }
