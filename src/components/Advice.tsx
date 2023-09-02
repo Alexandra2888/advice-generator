@@ -6,14 +6,14 @@ import desktop from "../assets/pattern-divider-desktop.svg";
 import { useQuery } from 'react-query';
 import axios from "axios";
 
-import { iAdviceData } from "../interfaces/IAdviceData";
+import { IAdviceData } from "../interfaces/IAdviceData";
 import { QueryClient } from 'react-query';
 
 const url = "https://api.adviceslip.com/advice";
 const queryClient = new QueryClient();
 
 const getAdvice = () => {
-  return axios.get<iAdviceData>(url)
+  return axios.get<IAdviceData>(url)
     .then((response) => response.data)
     .catch((error) => {
       console.error("Error fetching advice:", error);
@@ -22,7 +22,7 @@ const getAdvice = () => {
 };
 
 const Advice = () => {
-  const { data: adviceData, isLoading } = useQuery<iAdviceData>('advice', getAdvice);
+  const { data: adviceData, isLoading } = useQuery<IAdviceData>('advice', getAdvice);
 
   if (isLoading) {
     return <div>Loading...</div>;
